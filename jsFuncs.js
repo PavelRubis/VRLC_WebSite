@@ -16,11 +16,19 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-
-/* $(function() {
-	
-	$("nav select").change(function() {
-		window.location = $(this).find("option:selected").val();
+function init(){
+	// Создание карты.
+	var myMap= new ymaps.Map("map", {
+		center: [56.136572, 40.396780],
+		zoom: 17
+	});
+		
+	var myPlacemark = new ymaps.Placemark([56.136572, 40.396780], {
+		balloonContentHeader: 'ООО "ВРЮЦ"',
+		balloonContentBody: 'ООО "ВРЮЦ" г. Владимир, ул. Мира, дом 22',
+		hintContent: 'ООО "ВРЮЦ"'
 	});
 
-}); */
+	myMap.geoObjects.add(myPlacemark);
+		
+}

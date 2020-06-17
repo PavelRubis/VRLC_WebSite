@@ -1,0 +1,106 @@
+
+.allContactsDiv {
+	margin:30px auto;
+	height:500px;
+	width:1100px;
+}
+
+.textInfoDiv {
+	height:405px;
+	margin-top:25px;
+	margin-right:20px;
+	padding:20px;
+	padding-top:50px;
+	float:left;
+	background-color: #3e394d;
+}
+
+.textInfoDiv h2 {
+	font-weight: bold;
+	font-size:20px;
+}
+
+.textInfoDiv h2.titles {
+	color: #78d0de;
+	margin:0;
+	margin-bottom:10px;
+	text-align:center;
+}
+
+.textInfoDiv h2.info {
+	color: #d9d9db;
+	margin:0;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.textInfoDiv a {
+	display: inline-block;
+	width:250px;
+	height:60px;
+	padding:0;
+	margin:0;
+	margin-top:100px;
+	border: none;
+}
+
+.textInfoDiv a:link    {color: #d9d9db; text-decoration:none;}
+.textInfoDiv a:visited {color: #d9d9db; text-decoration:none;}
+.textInfoDiv a:hover   {color: #d9d9db; text-decoration:none;}
+.textInfoDiv a:active  {color: #d9d9db; text-decoration:none;}
+
+.textInfoDiv a button {
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	background-color: #3e394d;
+	color: #78d0de;
+	font-size:20px;
+	border: 2px solid #78d0de;
+}
+
+.textInfoDiv a button:hover{
+	background-color: #78d0de;
+	color: #3e394d;
+}
+
+.officePhotosDiv {
+	height:475px;
+	margin-top:25px;
+	margin-right:20px;
+	float:left;
+}
+
+.officePhotoDiv {
+	height:155px;
+	width:250px;
+	margin-bottom:5px;
+	background-color: #d9d9db;
+	color: #3e394d;
+	text-align:center;
+	font-weight:bold;
+}
+
+.addrAndMapDiv {
+	height:500px;
+	width:490px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.addrAndMapDiv h2 {
+	margin:0;
+	padding:0;
+	font-weight: bold;
+	font-size:20px;
+	color: #3e394d;
+	text-align:center;
+}
+
+#map {
+	height:475px;
+	border: 2px solid #d9d9db;
+	box-sizing: border-box;
+}

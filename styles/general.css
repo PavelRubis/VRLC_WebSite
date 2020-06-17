@@ -103,20 +103,7 @@ body {
     padding-bottom: 5px;
 }
 
-/* @media all and ( (not handheld) and (max-width: 1440px) )  {
-	nav ul {margin-right:200px;}
-	nav ul li {margin-right:20px;}
-	p.copyrightP {margin-right:100px;}
-	div.footerMenuAddrDiv{margin-right:100px;}
-	.headerMenuDiv {padding-left:20px;}
-}
-
-@media all and ( (not handheld) and (min-width: 1440px) ) {
-	nav ul {margin-right:110px;}
-	nav ul li {margin-right:50px;}
-} */
-
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
 	nav ul {margin-right:0;}
 	nav ul li {margin-right:0;}
 	p.copyrightP {margin-right:0px;}
@@ -127,7 +114,33 @@ body {
 @media (min-width: 1440px) {
 	nav ul {margin-right:110px;}
 	nav ul li {margin-right:50px;}
+} */
+
+@media (max-width: 1440px) {
+	nav ul {margin-right:110px;}
+	nav ul li {margin-right:30px;}
+	p.copyrightP {margin-right:100px;}
+	div.footerMenuAddrDiv{margin-right:115px;}
+	.headerMenuDiv {padding-left:70px;}
 }
+
+@media (min-width: 1441px) {
+	nav ul {margin-right:150px;}
+	nav ul li {margin-right:30px;}
+}
+
+@media (max-width: 1100px)  {
+	nav ul {margin-right:0;}
+	nav ul li {margin-right:0;}
+	p.copyrightP {margin-right:0px;}
+	div.footerMenuAddrDiv{margin-right:0px;}
+	.headerMenuDiv {padding-left:20px;}
+}
+
+/* @media (min-width: 1100px) {
+	nav ul {margin-right:110px;}
+	nav ul li {margin-right:20px;}
+} */
 
 nav select {
 	height: 20px;
@@ -245,7 +258,7 @@ nav ul{
 .footerMenuAddrDiv {
 	float:left;
 	height: 80px;
-	margin-right:220px;
+	margin-right:170px;
 	color: #78d0de;
 }
 
@@ -287,3 +300,25 @@ ul.navFooter{
 	color: #d9d9db;
 	text-align: center;
 	}
+	
+
+
+.linkDiv {
+	height:20px;
+	width:100%;
+	font-size:18px;
+	margin-top:20px;
+	padding-left:10px;
+	}
+	
+.linkDiv a{
+	display: inline-block;
+	border: none;
+	text-align: left;
+	font-weight: bold;
+}
+.linkDiv a:link    {color: #3e394d; text-decoration:none;}
+.linkDiv a:visited {color: #3e394d; text-decoration:none;}
+.linkDiv a:hover   {color: #3e394d; text-decoration:underline;}
+.linkDiv a:active  {color: #3e394d; text-decoration:underline;}
+

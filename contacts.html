@@ -2,11 +2,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Запись на консультацию </title>
+        <title> Контактная информация </title>
 		<link rel="stylesheet" type="text/css" href="styles/general.css"/>
-		<link rel="stylesheet" type="text/css" href="styles/request.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/contacts.css"/>
 		<script src="jsFuncs.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=40b33446-800b-40b9-8b10-27b87f2cf8ad&lang=ru_RU" type="text/javascript"></script>
 		
+		 <script type="text/javascript">
+			// Функция ymaps.ready() будет вызвана, когда
+			// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+			//ymaps.ready(init);
+		 </script>
     </head>
     <body>
         <div id="header">
@@ -23,12 +29,12 @@
 										<li><a href="#">Услуги </a></li>
 										<li><a href="team.html">Команда</a></li>
 										<li><a href="#">Нам доверяют</a></li>
-										<li><a href="contacts.html">Контакты</a></li>
+										<li><a href="#">Контакты</a></li>
 									</ul>
 								</nav>
 								<div class="contactsDiv">
 									<div class="contactsInfDiv">53-00-95</div>
-									<div class="contactsInfDiv"><a href="#">Запись на консультацию</a></div>
+									<div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
 								</div>
 							</div>
 						</div>
@@ -37,27 +43,44 @@
 			</div>
 		</div>
 		
-		
 		<div class="linkDiv" > 
 			<a href="home.html">Главная ></a>
-			<a href="#"> Запись на консультацию</a>
+			<a href="#"> Контакты</a>
 		</div>
 		
-		<div class="requestDiv"> 
-			<div>
-			Оставьте заявку на бесплатную
+		<div class="allContactsDiv"> 
+			<div class="textInfoDiv" > 
+				<h2 class="titles">Номер телефона:</h2>
+				<h2 class="info">53-00-95</h2>
+				<h2 class="titles">Адрес эл. почты:</h2>
+				<h2 class="info">rubisdv@mail.ru</h2>
+				<h2 class="titles">Часы работы:</h2>
+				<h2 class="info">ПН-ПТ с 9:00 до 19:00</h2>
+				<a href="request.html">
+					<button>
+						<div>
+							Запись на бесплатную
+						</div>
+						<div>
+							консультацию
+						</div>
+					</button>
+				</a>
 			</div>
-			<div>
-			консультацию
+			<div class="officePhotosDiv">
+				<div class="officePhotoDiv">
+				Фото офиса
+				</div>
+				<div class="officePhotoDiv">
+				Фото офиса
+				</div>
+				<div class="officePhotoDiv">
+				Фото офиса
+				</div>
 			</div>
-			<div class="formDiv">
-				<form method="post" autocomplete="off">
-					<input name="Name" onblur="if(this.value=='') this.value='Ваше имя'" onfocus="if(this.value=='Ваше имя') this.value=''" value='Ваше имя'/>
-					<input type="tel" onblur="if(this.value=='') this.value='Телефон'" onfocus="if(this.value=='Телефон') this.value=''" value='Телефон'  pattern="\+7[0-9]{10}" placeholder="+7XXXXXXXXXX" id="phone" name="phone"/>
-					<input type="email" onblur="if(this.value=='') this.value='Email'" onfocus="if(this.value=='Email') this.value=''" value='Email' pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="example@mail.ru" id="email" name="email"/>
-					<textarea name="Msg" onblur="if(this.value=='') this.value='Сообщение'" onfocus="if(this.value=='Сообщение') this.value=''" value='Сообщение' id="msg"></textarea>
-					<input type="submit" value="Отправить" id="send" />
-				</form>
+			<div class="addrAndMapDiv">
+				<h2>г. Владимир, ул. Мира, дом 22</h2>
+				  <div id="map" ></div>
 			</div>
 		</div>
 		
@@ -69,7 +92,7 @@
 						<li><a href="#">Услуги</a></li>
 						<li><a href="team.html">Команда</a></li>
 						<li><a href="#">Нам доверяют</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="footerAddrDiv">
@@ -80,7 +103,7 @@
 			<div class="contactsDiv">
 				<div class="contactsInfDiv">53-00-95</div>
 				<div class="contactsInfDiv">rubisdv@mail.ru</div>
-				<div class="contactsInfDiv"><a href="#">Запись на консультацию</a></div>
+				<div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
 			</div>
 			
         </div>
