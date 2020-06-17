@@ -96,11 +96,11 @@ body {
 }
 
 .headerMenuDiv {
-	height: 40px;
+	height: 50px;
 	padding-left: 300px;
 	padding-right: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* @media (max-width: 1440px) {
@@ -117,10 +117,10 @@ body {
 } */
 
 @media (max-width: 1440px) {
-	nav ul {margin-right:110px;}
+	nav ul {margin-right:70px;}
 	nav ul li {margin-right:30px;}
 	p.copyrightP {margin-right:100px;}
-	div.footerMenuAddrDiv{margin-right:115px;}
+	div.footerMenuAddrDiv{margin-right:80px;}
 	.headerMenuDiv {padding-left:70px;}
 }
 
@@ -152,8 +152,8 @@ nav select {
 }
 
 nav ul{
-	margin-top:0;
-	margin-bottom:0;
+	margin-top:3px;
+	margin-bottom:3px;
 	padding-left: 0;
 	list-style: none;
 	float:left;
@@ -181,8 +181,26 @@ nav ul{
 	float:left;
 }
 
+.contactsDivScnd {
+	width: 100%;
+	height: 24px;
+	margin-bottom:3px;
+}
+
+.contactsIconDiv {
+	float:left;
+	width: 24px;
+	height: 24px;
+	float:left;
+	margin-right:5px;
+}
+.contactsIconDiv img {
+	width: 100%;
+	height: 100%;
+}
+
 .contactsInfDiv {
-    padding-left: 24px;
+	float:left;
 }
 
 
@@ -271,13 +289,15 @@ nav ul{
 
 .footerAddrDiv {
 	height: 40px;
-	margin-left: 125px;
-	margin-right: 125px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	color: #78d0de;
 	border: 2px solid #78d0de;
 	box-sizing: border-box;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 ul.navFooter{
