@@ -1,0 +1,12 @@
+.thisServiceDiv {
+	width:900px;
+	margin: 20px auto;
+}
+
+.thisServiceDiv h2{
+	width:300px;
+	margin:0 auto;
+	margin-bottom:26px;
+	font-weight: bold;
+	color: #3e394d;
+}

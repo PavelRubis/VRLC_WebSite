@@ -35,7 +35,7 @@ body {
 
 .sloganDiv {
 	height: 100px;
-	background-color: #d9d9db;
+	/* background-color: #d9d9db; */
 	text-align:center;
 }
 
@@ -103,29 +103,18 @@ body {
     padding-bottom: 0;
 }
 
-/* @media (max-width: 1440px) {
-	nav ul {margin-right:0;}
-	nav ul li {margin-right:0;}
-	p.copyrightP {margin-right:0px;}
-	div.footerMenuAddrDiv{margin-right:0px;}
-	.headerMenuDiv {padding-left:20px;}
-}
 
-@media (min-width: 1440px) {
-	nav ul {margin-right:110px;}
-	nav ul li {margin-right:50px;}
-} */
 
 @media (max-width: 1440px) {
-	nav ul {margin-right:70px;}
+	nav ul {margin-right:100px;}
 	nav ul li {margin-right:30px;}
 	p.copyrightP {margin-right:100px;}
-	div.footerMenuAddrDiv{margin-right:80px;}
+	div.footerMenuAddrDiv{margin-right:110px;}
 	.headerMenuDiv {padding-left:70px;}
 }
 
 @media (min-width: 1441px) {
-	nav ul {margin-right:150px;}
+	nav ul {margin-right:140px;}
 	nav ul li {margin-right:30px;}
 }
 
@@ -134,13 +123,19 @@ body {
 	nav ul li {margin-right:0;}
 	p.copyrightP {margin-right:0px;}
 	div.footerMenuAddrDiv{margin-right:0px;}
+	div.footerMenuDiv{padding-right:0px;}
 	.headerMenuDiv {padding-left:20px;}
 }
 
-/* @media (min-width: 1100px) {
-	nav ul {margin-right:110px;}
-	nav ul li {margin-right:20px;}
-} */
+@media (min-width: 1920px) {
+	nav ul {margin-right:190px;}
+	nav ul li {margin-right:100px;}
+	p.copyrightP {margin-right:300px;}
+	div.footerMenuAddrDiv{margin-right:510px;}
+	.headerMenuDiv {padding-left:300px;}
+}
+
+
 
 nav select {
 	height: 20px;
@@ -246,12 +241,47 @@ nav ul{
 
 
 .tabcontent {
+	height:422px;
 	margin-left:10px;
 	margin-right:10px;
-    display: none;
-    padding: 6px 12px;
-    border: 2px solid #3e394d;
+    display: none;/* 
+	padding: 20px 0px; */
+    /* border: 2px solid #3e394d; */
 }
+
+.servicesDiv {
+	width: 800px;
+	height: 100%;
+    margin:0 auto;
+	padding-top: 20px;
+	border: 2px solid #3e394d;
+	border-bottom: none;
+}
+
+.serviceDiv {
+	width: 200px;
+    height: 200px;
+    float: left;
+	box-sizing: border-box;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.serviceDiv a img {
+	width: 106px;
+    height: 106px;
+}
+
+.serviceDiv a {
+    margin: 5px 0 10px 0;
+	
+}
+
+.serviceDiv a:link    {color: #3e394d; text-decoration:none;}
+.serviceDiv a:visited {color: #3e394d; text-decoration:none;}
+.serviceDiv a:hover   {color: #3e394d; text-decoration:underline;}
+.serviceDiv a:active  {color: #3e394d; text-decoration:underline;}
+
 
 #footer {
 	padding: 10px;
@@ -267,7 +297,7 @@ nav ul{
 	float:left;
 	height:50px;
 	
-	margin-right:320px;
+	margin-right:270px;
 	margin-top:30px;
 	margin-bottom:0;
 	text-align: center;
@@ -276,7 +306,7 @@ nav ul{
 .footerMenuAddrDiv {
 	float:left;
 	height: 80px;
-	margin-right:170px;
+	margin-right:210px;
 	color: #78d0de;
 }
 
@@ -289,10 +319,26 @@ nav ul{
 
 .footerAddrDiv {
 	height: 40px;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin-left: 80px;
+	margin-right: 50px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.footerAddrDiv .contactsIconDiv {
+	float:left;
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right:5px;
+}
+
+.footerAddrDivText {
+	float:left;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	color: #78d0de;
 	border: 2px solid #78d0de;
 	box-sizing: border-box;

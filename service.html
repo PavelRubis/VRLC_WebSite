@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Запись на консультацию </title>
+        <title> ООО "ВРЮЦ"-Главная </title>
 		<link rel="stylesheet" type="text/css" href="styles/general.css"/>
-		<link rel="stylesheet" type="text/css" href="styles/request.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/service.css"/>
 		<script src="jsFuncs.js" type="text/javascript"></script>
 		
     </head>
     <body>
         <div id="header">
 			<div class="logoDiv" > 
-				<a href="home.html"> <img src="images/logo3_png.png" width="96" height="95" alt="ООО ВРЮЦ Владимир" /> </a>
+				<a href="home.html"> <img src='images/logo3_png.png' width="96" height="95" alt="ООО ВРЮЦ Владимир" /> </a>
 			</div>
 			<div class="frstHeaderMenuDiv">
 				<div class="scndHeaderMenuDiv">
@@ -45,30 +45,18 @@
 			</div>
 		</div>
 		
-		
-		<div class="linkDiv" > 
-			<a href="home.html">Главная ></a>
-			<a href="#"> Запись на консультацию</a>
+		<div class="thisServiceDiv">
+			<h2>Заключение сделок</h2>
+			
+			<p>В современном мире ежедневно совершается огромное количество сделок.
+			Быть уверенным на 100%, что при заключении, изменении, расторжении договора Ваши права и интересы не будут нарушены - невозможно.</p>
+			<h3>Услуги адвоката по договорному праву:</h3>
+			<p>- обширная юридическая консультация, связанная с договорным правом;</p>
+			<p>- правовой анализ имеющихся документов;</p>
+			<p>- экспертиза договора/соглашения на соответствие с действующим законодательством РФ;</p>
 		</div>
 		
-		<div class="requestDiv"> 
-			<div>
-			Оставьте заявку на бесплатную
-			</div>
-			<div>
-			консультацию
-			</div>
-			<div class="formDiv">
-				<form method="post" autocomplete="off">
-					<input name="Name" onblur="if(this.value=='') this.value='Ваше имя'" onfocus="if(this.value=='Ваше имя') this.value=''" value='Ваше имя'/>
-					<input type="tel" onblur="if(this.value=='') this.value='Телефон'" onfocus="if(this.value=='Телефон') this.value=''" value='Телефон'  pattern="\+7[0-9]{10}" placeholder="+7XXXXXXXXXX" id="phone" name="phone"/>
-					<input type="email" onblur="if(this.value=='') this.value='Email'" onfocus="if(this.value=='Email') this.value=''" value='Email' pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="example@mail.ru" id="email" name="email"/>
-					<textarea name="Msg" onblur="if(this.value=='') this.value='Сообщение'" onfocus="if(this.value=='Сообщение') this.value=''" value='Сообщение' id="msg"></textarea>
-					<input type="submit" value="Отправить" id="send" />
-				</form>
-			</div>
-		</div>
-		
+
         <div id="footer">
             <p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
 			<div class="footerMenuAddrDiv">
