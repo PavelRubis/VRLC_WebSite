@@ -40,9 +40,15 @@ body {
 }
 
 .logoDiv {
+	width: 96px;
+	height: 95px;
 	z-index:10;
 	float:left;
-	}
+}
+.logoDiv img {
+	width:100%;
+	height:100%;
+}
 
 .frstHeaderMenuDiv {
 	margin-left: 64px;
@@ -103,6 +109,77 @@ body {
     padding-bottom: 0;
 }
 
+/* Кнопка выпадающего списка */
+.dropbtn {
+	height: 55px;
+	padding: 10px;
+	font-size: 28px;
+	border: none;
+	cursor: pointer;
+	background-color: #3e394d;
+	border: 2px solid #78d0de;
+	color: #78d0de;
+}
+
+.dropbtnImg {
+	width: 30px;
+	height: 30px;
+}
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+	width: 140px;
+	position: relative;
+	display: inline-block;
+	display: none;
+}
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+  /* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color:#d9d9db;}
+  
+  /* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+.show {display:block;}
+
+#headerMobile{font-size: 28px; display: none; }
+
+.mobileHeaderRequestDiv {
+	width: 400px;
+	height: 30px;
+}
+
+.mobileHeaderPhoneDiv {
+	width: 180px;
+	height: 30px;
+}
+
+.mobileHeaderEmailDiv {
+	width: 250px;
+	height: 30px;
+}
+
+
+#headerMobile .contactsIconDiv {
+	width: 30px;
+	height: 30px;
+}
 
 
 @media (max-width: 1440px) {
@@ -119,12 +196,21 @@ body {
 }
 
 @media (max-width: 1100px)  {
-	nav ul {margin-right:0;}
-	nav ul li {margin-right:0;}
-	p.copyrightP {margin-right:0px;}
-	div.footerMenuAddrDiv{margin-right:0px;}
+	.frstHeaderMenuDiv {display: none;}
+	.scndHeaderMenuDiv {display: none;}
+	.thrdHeaderMenuDiv {display: none;}
+	.frthHeaderMenuDiv {display: none;}
+
+	#header{height: 450px; background-color: #3e394d;}
+	.logoDiv {margin:10px auto; float:none; height:200px; width:200px;}
+	#headerMobile{display: block;margin:10px auto;}
+	.dropdown{margin-top:35px; margin-bottom:0; margin-right: auto; margin-left: auto; display: block;}
+	nav ul{ display: none; }
+
+	
+	p.copyrightP {margin-right:0;}
+	div.footerMenuAddrDiv{margin-right:5px;}
 	div.footerMenuDiv{padding-right:0px;}
-	.headerMenuDiv {padding-left:20px;}
 }
 
 @media (min-width: 1920px) {
@@ -136,15 +222,6 @@ body {
 }
 
 
-
-nav select {
-	height: 20px;
-	margin-top:10px;
-	margin-bottom:10px;
-	margin-right: 10%;
-	float:left;
-	display: none;
-}
 
 nav ul{
 	margin-top:3px;
@@ -196,6 +273,7 @@ nav ul{
 
 .contactsInfDiv {
 	float:left;
+	color: #78d0de;
 }
 
 
