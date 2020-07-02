@@ -33,14 +33,21 @@ function init(){
 		
 }
 
-/* Когда пользователь нажимает на кнопку,
-переключение между скрытием и отображением раскрывающегося содержимого */
 function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  if(document.getElementById("myDropdown").classList.contains('show')) 
+  {/* 
+    document.getElementById("myDropdown").classList.remove('show'); */
+    document.getElementById("myDropdown").className.replace(" show","");
+    
   }
+  else {/*
+    document.getElementById("myDropdown").classList.add('show'); 
+     */
+    document.getElementById("myDropdown").className += " show";
+  }
+}
   
-  // Закройте выпадающее меню, если пользователь щелкает за его пределами
-  window.onclick = function(event) {
+window.onclick = function(event) {
     if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
