@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title> ООО "ВРЮЦ"-Главная </title>
     <link rel="stylesheet" type="text/css" href="styles/general.css" />
+    <link rel="stylesheet" type="text/css" href="styles/propertySearch.css" />
     <script src="jsFuncs.js" type="text/javascript"></script>
 
 </head>
@@ -77,99 +78,74 @@
         </div>
     </div>
 
-    <div class="sloganDiv">
-        Картинка со слоганом
+    <div class="linkDiv">
+        <a href="home.html">Главная ></a>
+        <a href="#"> Розыск имущества</a>
     </div>
 
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'ЮРИДИЧЕСКИМ_ЛИЦАМ')">ЮРИДИЧЕСКИМ ЛИЦАМ</button>
-        <button class="tablinks" onclick="openCity(event, 'ФИЗИЧЕСКИМ_ЛИЦАМ')">ФИЗИЧЕСКИМ ЛИЦАМ</button>
-        <button class="tablinks" onclick="openCity(event, 'ВЗЫСКАНИЕ_ДОЛГОВ')">ВЗЫСКАНИЕ ДОЛГОВ</button>
-        <button class="tablinks" onclick="openCity(event, 'РОЗЫСК_ИМУЩЕСТВА')">РОЗЫСК ИМУЩЕСТВА</button>
+    <div class="searchDivText">
+        Услуга поиска имущества должников оказывается на всей территории РФ. <br> Вам нужно только оставить контактную
+        информацию и ввести данные о должнике.
     </div>
+    <div class="searchDiv">
 
-    <div id="ЮРИДИЧЕСКИМ_ЛИЦАМ" class="tabcontent">
-        <div class="servicesDiv">
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
+        <div class="allFormDiv">
+            <div class="searchFormDivText">
+                Контактная информация:
             </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
+            <form method="post " autocomplete="off ">
+                <div class="searchFormContactDiv">
+                    <input name="Name " onblur="if(this.value=='' ) this.value='Ваше имя' "
+                        onfocus="if(this.value=='Ваше имя' ) this.value='' " value='Ваше имя' />
+                    <input type="tel " onblur="if(this.value=='' ) this.value='Телефон' "
+                        onfocus="if(this.value=='Телефон' ) this.value='' " value='Телефон' pattern="\+7[0-9]{10} "
+                        placeholder="+7XXXXXXXXXX " id="phone " name="Phone " />
+                    <input type="email " onblur="if(this.value=='' ) this.value='Email' "
+                        onfocus="if(this.value=='Email' ) this.value='' " value='Email'
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8}) " placeholder="example@mail.ru "
+                        id="email" name="Email " />
+                </div>
+                <div class="searchDivDebtorText">
+                    Данные о должнике:
+                </div>
+                <div class="searchFormDebtorDiv">
+
+                    <input name="DebtorName" onblur="if(this.value=='' ) this.value='Ф.И.0' "
+                        onfocus="if(this.value=='Ф.И.0' ) this.value='' " value='Ф.И.0' />
+
+                    <input onblur="if(this.value=='' ) this.value='Место регистрации' "
+                        onfocus="if(this.value=='Место регистрации' ) this.value='' " value='Место регистрации'
+                        id="registr " name="Registr" />
+
+                    <label for="date">Дата рождения: </label>
+
+                    <input type="date" id="date" name="BirthDate" />
+
+                    <input onblur="if(this.value=='' ) this.value='Наличие супруга (Ф.И.О если есть)' "
+                        onfocus="if(this.value=='Наличие супруга (Ф.И.О если есть)' ) this.value='' "
+                        value='Наличие супруга (Ф.И.О если есть)' id="spouse " name="Spouse" />
+
+                    <textarea name="DebtorExtraInf" onblur="if(this.value=='') this.value='Иная имеющаяся информация'"
+                        onfocus=" if(this.value=='Иная имеющаяся информация' ) this.value=''"
+                        value='Иная имеющаяся информация' id="DebtorExtraInf "></textarea>
+
+                </div>
+
+                <div class="searchFormDivText">
+                    Оформление:
+                </div>
+
+                <div class="submitDiv">
+                    <label class="checkbox-other">
+                        <input type="checkbox" checked name="contractCheckbox" id="ContractCheckbox"
+                            onchange="ContractBlock('ContractCheckbox')"> С <a href="#"> договором</a> оказания услуги
+                        ознакомлен
+                    </label>
+                    <button type="submit" id="submitButton"> <img src="images/cart.png" /> <div>Купить услугу - 500₽</div> </button>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div id="ФИЗИЧЕСКИМ_ЛИЦАМ" class="tabcontent">
-        <div class="servicesDiv">
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-            <div class="serviceDiv">
-                <a href="home.html"> <img src="images/icon_services.png" alt="услуга1" /> </a>
-                <a href="home.html">Название<br />услуги</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="ВЗЫСКАНИЕ_ДОЛГОВ" class="tabcontent">
-        <h3>ВЗЫСКАНИЕ ДОЛГОВ</h3>
-    </div>
-
-    <div id="РОЗЫСК_ИМУЩЕСТВА" class="tabcontent">
-        <h3>РОЗЫСК ИМУЩЕСТВА</h3>
-    </div>
-
     <div id="footer">
         <p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
         <div class="footerMenuAddrDiv">

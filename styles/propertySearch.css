@@ -1,0 +1,199 @@
+.searchDiv {
+    width: 600px;
+    height: 1300px;
+    margin: 20px auto;
+}
+
+.searchDivText {
+    color: #3e394d;
+    font-size: 22px;
+    text-align: center;
+}
+
+.allFormDiv {
+    background-color: #3e394d;
+    font-size: 20px;
+    width: 100%;
+    height: 1300px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.searchFormContactDiv {
+    background-color: #3e394d;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 5px solid #78d0de;
+    color: #78d0de;
+}
+
+#email {
+    margin-bottom: 0;
+}
+
+.searchFormDebtorDiv {
+    background-color: #3e394d;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 5px solid#FFEC00;
+    color: #FFEC00;
+}
+
+.searchFormDivText,
+.searchDivDebtorText {
+    color: #78d0de;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.searchFormContactDiv input,
+.searchFormDebtorDiv input,
+.searchFormDebtorDiv textarea {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    background-color: #3e394d;
+    border: 2px solid #78d0de;
+    color: #78d0de;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.searchFormDebtorDiv input[type="date"] {
+    margin-top: 5px;
+}
+
+.searchDivDebtorText {
+    color: #FFEC00;
+}
+
+.searchFormDebtorDiv input,
+.searchFormDebtorDiv textarea {
+    border: 2px solid#FFEC00;
+    color: #FFEC00;
+}
+
+.searchFormDebtorDiv textarea {
+    height: 200px;
+    margin-bottom: 0;
+    resize: none;
+}
+
+.submitDiv{
+    height: 200px;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #3e394d;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 5px solid #78d0de;
+    color: #78d0de;
+}
+
+input[type="checkbox"] {
+    border: 2px solid #78d0de;
+    box-sizing: border-box;
+}
+
+.submitDiv button[type="submit"] {
+    width: 100%;
+    height:50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    color: #78d0de;
+    background-color: #3e394d;
+    border: 2px solid #78d0de;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.submitDiv button[type="submit"] img {
+    width: 25px;
+    height:25px;
+    float: left;
+    margin-right: 20px;
+}
+
+.submitDiv button[type="submit"] div {
+    float: left;
+    margin: 0 auto;
+}
+
+.submitDiv button:hover{
+	background-color: #78d0de;
+	color: #3e394d;
+}
+
+.submitDiv button[disabled]:hover{
+	background-color:#3e394d;
+	color:#78d0de;
+}
+
+
+.checkbox-other {
+	display: block;
+	margin: 0 0 40px 0;
+    padding: 5px ;
+	line-height: 22px;
+    border: 2px solid #78d0de;  
+}
+.checkbox-other input[type=checkbox] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	vertical-align: top;
+	outline: none;
+	transition: background 0.3s ease;
+	background: url(C:/Necessary/VRLC_WebSite/WebSite/images/checkbox1.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+ 
+/* Checked */
+.checkbox-other input[type=checkbox]:checked {
+	background-image: url(C:/Necessary/VRLC_WebSite/WebSite/images/checkbox3.png);
+}
+ 
+/* Focus */
+.focused input[type=checkbox] {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.checkbox-other input[type=checkbox]:hover {
+	filter: brightness(110%);
+}
+ 
+/* Active */
+.checkbox-other input[type=checkbox]:active {
+	filter: brightness(80%);
+}
+ 
+/* Disabled */
+.checkbox-other input[type=checkbox]:disabled {
+	color: #666;
+	cursor: default;
+}
+.checkbox-other input[type=checkbox]:disabled {
+	filter: grayscale(100%);
+	opacity: 0.6;
+}
+
+.checkbox-other a:link, .checkbox-other a:visited, .checkbox-other a:hover, .checkbox-other a:active{
+    color: #d9d9db;
+    text-decoration: underline;
+}

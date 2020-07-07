@@ -1,4 +1,3 @@
-
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
 
@@ -16,46 +15,56 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
-function init(){
-	// Создание карты.
-	var myMap= new ymaps.Map("map", {
-		center: [56.136572, 40.396780],
-		zoom: 17
-	});
-		
-	var myPlacemark = new ymaps.Placemark([56.136572, 40.396780], {
-		balloonContentHeader: 'ООО "ВРЮЦ"',
-		balloonContentBody: 'ООО "ВРЮЦ" г. Владимир, ул. Мира, дом 22',
-		hintContent: 'ООО "ВРЮЦ"'
-	});
+function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+        center: [56.136572, 40.396780],
+        zoom: 17
+    });
 
-	myMap.geoObjects.add(myPlacemark);
-		
+    var myPlacemark = new ymaps.Placemark([56.136572, 40.396780], {
+        balloonContentHeader: 'ООО "ВРЮЦ"',
+        balloonContentBody: 'ООО "ВРЮЦ" г. Владимир, ул. Мира, дом 22',
+        hintContent: 'ООО "ВРЮЦ"'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+
 }
 
-function myFunction() {
-  if(document.getElementById("myDropdown").classList.contains('show')) 
-  {/* 
-    document.getElementById("myDropdown").classList.remove('show'); */
-    document.getElementById("myDropdown").className.replace(" show","");
-    
-  }
-  else {/*
-    document.getElementById("myDropdown").classList.add('show'); 
-     */
-    document.getElementById("myDropdown").className += " show";
-  }
-}
-  
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+function myFunction(pagePart) {
+    if (pagePart == 'header') {
+        if (document.getElementById("myDropdown").classList.contains('show')) {
+            document.getElementById("myDropdown").className.replace(" show", "");
+        } else {
+            document.getElementById("myDropdown").className += " show";
         }
-      }
+    } else {
+        if (document.getElementById("myDropdownFooter").classList.contains('show')) {
+            document.getElementById("myDropdownFooter").className.replace(" show", "");
+        } else {
+            document.getElementById("myDropdownFooter").className += " show";
+        }
+    }
+}
+
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function ContractBlock(checkboxId) {
+    if (document.getElementById(checkboxId).checked) {
+        document.getElementById("submitButton").disabled = false;
+    } else {
+        document.getElementById("submitButton").disabled = true;
     }
 }
