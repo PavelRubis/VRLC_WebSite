@@ -68,3 +68,59 @@ function ContractBlock(checkboxId) {
         document.getElementById("submitButton").disabled = true;
     }
 }
+
+$(document).ready(function () {
+    $('.multiple-items-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: true,
+        variableWidth: true,
+        speed: 300,
+    });
+});
+
+function SelectPartnersOrLicenses(buttonId) {
+    thisBtn = document.getElementById(buttonId);
+    thisBtn.style.backgroundColor = "#d9d9db";
+    thisBtn.style.color = "#3e394d";
+
+    if (thisBtn.id == "licenseButton") {
+        document.getElementById("partnersDiv").style.display = "none";
+        document.getElementById("sliderDiv").style.display = "block";
+        document.getElementById('partnersButton').style.backgroundColor = "#3e394d";
+        document.getElementById('partnersButton').style.color = "#d9d9db";
+
+    } else {
+        document.getElementById("sliderDiv").style.display = "none";
+        document.getElementById("partnersDiv").style.display = "block";
+
+        document.getElementById('licenseButton').style.backgroundColor = "#3e394d";
+        document.getElementById('licenseButton').style.color = "#d9d9db";
+
+    }
+}
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+function ModalImgShow(imgID,modalImgId) {
+    var modalImgs;
+
+    modalImgs = document.getElementsByClassName("modal-content");
+
+    for (i = 0; i < modalImgs.length; i++) {
+        modalImgs[i].style.display = "none";
+    }
+
+    var modal = document.getElementById('Modal');
+    var modalImg = document.getElementById(modalImgId);
+    modalImg.style.display = "block";
+    modal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+
+// When the user clicks on <span> (x), close the modal
+function CloseSpan() { 
+    var span = document.getElementById("close")[0];
+    var modal = document.getElementById('Modal');
+    modal.style.display = "none";
+}

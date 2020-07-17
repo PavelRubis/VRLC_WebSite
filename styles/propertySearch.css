@@ -1,20 +1,22 @@
 .searchDiv {
     width: 600px;
-    height: 1300px;
+    height: 1350px;
     margin: 20px auto;
 }
 
 .searchDivText {
+    width: 900px;
+    margin:20px auto;
     color: #3e394d;
     font-size: 22px;
-    text-align: center;
+    text-align: justify;
 }
 
 .allFormDiv {
     background-color: #3e394d;
     font-size: 20px;
     width: 100%;
-    height: 1300px;
+    height: 1350px;
     padding: 20px 50px;
     box-sizing: border-box;
 }
@@ -30,7 +32,7 @@
     color: #78d0de;
 }
 
-#email {
+.contactEmail {
     margin-bottom: 0;
 }
 
@@ -159,13 +161,13 @@ input[type="checkbox"] {
 	vertical-align: top;
 	outline: none;
 	transition: background 0.3s ease;
-	background: url(C:/Necessary/VRLC_WebSite/WebSite/images/checkbox1.png) 0 0 no-repeat;
+	background: url(../images/checkbox1.png) 0 0 no-repeat;
 	cursor: pointer;
 }
  
 /* Checked */
 .checkbox-other input[type=checkbox]:checked {
-	background-image: url(C:/Necessary/VRLC_WebSite/WebSite/images/checkbox3.png);
+	background-image: url(../images/checkbox3.png);
 }
  
 /* Focus */
