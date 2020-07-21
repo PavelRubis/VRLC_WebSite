@@ -35,10 +35,11 @@
             <div id="myDropdown" class="dropdown-content">
                 <a href="home.html">Главная</a>
                 <a href="#">Услуги</a>
-                <a href="team.html">Команда</a>
-                <a href="#">Нам доверяют</a>
+                <a href="usTrust.html">Нам доверяют</a>
                 <a href="contacts.html">Контакты</a>
-                <a href="#">Розыск имущества</a>
+                <a href="propertySearch.html">Розыск имущества</a>
+                <a href="#">Видео</a>
+                <a href="#">Покупка долгов</a>
             </div>
         </div>
 
@@ -50,12 +51,19 @@
                             <nav>
                                 <ul>
                                     <li><a href="#">Услуги </a></li>
-                                    <li><a href="team.html">Команда</a></li>
-                                    <li><a href="#">Нам доверяют</a></li>
+                                    <li><a href="usTrust.html">Нам доверяют</a></li>
                                     <li><a href="contacts.html">Контакты</a></li>
-                                    <li><a href="#">Розыск имущества</a></li>
+                                    <li><a href="propertySearch.html">Розыск имущества</a></li>
+                                    <li>
+                                        <div class="dropdown" id='dropdownExtra'>
+                                            <div onclick="myFunction('extra')" class="drpDwnDiv">ПРОЧЕЕ</div>
+                                            <div id="extraDropDown" class="dropdown-content">
+                                                <a href="#">ВИДЕО</a>
+                                                <a href="#">ПОКУПКА ДОЛГОВ</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
-
                             </nav>
                             <div class="contactsDiv">
                                 <div class="contactsDivScnd">
@@ -83,59 +91,66 @@
 		
 		<div class="requestDiv"> 
 			<div>
-			Оставьте заявку на бесплатную
-			</div>
-			<div>
-			консультацию
+			Оставьте заявку на консультацию
 			</div>
 			<div class="formDiv">
 				<form method="post" autocomplete="off">
 					<input name="Name" onblur="if(this.value=='') this.value='Ваше имя'" onfocus="if(this.value=='Ваше имя') this.value=''" value='Ваше имя'/>
 					<input type="tel" onblur="if(this.value=='') this.value='Телефон'" onfocus="if(this.value=='Телефон') this.value=''" value='Телефон'  pattern="\+7[0-9]{10}" placeholder="+7XXXXXXXXXX" id="phone" name="phone"/>
 					<input type="email" onblur="if(this.value=='') this.value='Email'" onfocus="if(this.value=='Email') this.value=''" value='Email' pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="example@mail.ru" id="email" name="email"/>
-					<textarea name="Msg" onblur="if(this.value=='') this.value='Сообщение'" onfocus="if(this.value=='Сообщение') this.value=''" value='Сообщение' id="msg"></textarea>
+					<textarea onblur="if(this.value=='') this.value='Сообщение'" onfocus="if(this.value=='Сообщение') this.value=''" value='Сообщение' id="msg" name="Msg"></textarea>
 					<input type="submit" value="Отправить" id="send" />
 				</form>
 			</div>
 		</div>
-		
-		<div id="footer">
-			<p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
-			<div class="footerMenuAddrDiv">
-				<div class="footerMenuDiv">
-					<ul class="navFooter">
-						<li><a href="#">Услуги</a></li>
-						<li><a href="team.html">Команда</a></li>
-						<li><a href="#">Нам доверяют</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-						<li><a href="#">Розыск имущества</a></li>
-					</ul>
-				</div>
-				<div class="footerAddrDiv">
-					<div class="contactsIconDiv"> <img src="images/location.png" /></div>
-					<div class="footerAddrDivText">г. Владимир, ул. Мира, дом 22</div>
-				</div>
-			</div>
-			<div class="contactsDiv">
-	
-				<div class="contactsDivScnd">
-					<div class="contactsIconDiv"> <img src="images/email1.png" /></div>
-					<div class="contactsInfDiv">rubisdv@mail.ru</div>
-				</div>
-	
-				<div class="contactsDivScnd">
-					<div class="contactsIconDiv"> <img src="images/phone.png" /></div>
-					<div class="contactsInfDiv">+7-4922-53-00-95</div>
-				</div>
-	
-				<div class="contactsDivScnd">
-					<div class="contactsIconDiv"> <img src="images/request.png" /></div>
-					<div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
-				</div>
-	
-			</div>
-	
-	
-		</div>
-    </body>
-</html>
+
+        <div id="footer">
+            <p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
+            <div class="footerMenuAddrDiv">
+                <div class="footerMenuDiv">
+                    <ul class="navFooter">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="usTrust.html">Нам доверяют</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="propertySearch.html">Розыск имущества</a></li>
+                        <li>
+                            <div class="dropdown" id='dropdownExtraFooter'>
+                                <div onclick="myFunction('extraFooter')" class="drpDwnDiv">Прочее</div>
+                                <div id="extraDropDownFooter" class="dropdown-content">
+                                    <a href="#">ВИДЕО</a>
+                                    <a href="#">ПОКУПКА ДОЛГОВ</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footerAddrDiv">
+                    <div class="contactsIconDiv"> <img src="images/location.png" /></div>
+                    <div class="footerAddrDivText">г. Владимир, ул. Мира, дом 22</div>
+                </div>
+            </div>
+            <div class="contactsDiv">
+    
+                <div class="contactsDivScnd">
+                    <div class="contactsIconDiv"> <img src="images/email1.png" /></div>
+                    <div class="contactsInfDiv">rubisdv@mail.ru</div>
+                </div>
+    
+                <div class="contactsDivScnd">
+                    <div class="contactsIconDiv"> <img src="images/phone.png" /></div>
+                    <div class="contactsInfDiv">+7-4922-53-00-95</div>
+                </div>
+    
+                <div class="contactsDivScnd">
+                    <div class="contactsIconDiv"> <img src="images/request.png" /></div>
+                    <div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    
+    </body>
+    
+    </html>

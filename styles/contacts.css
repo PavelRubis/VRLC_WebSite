@@ -58,6 +58,7 @@
 	color: #78d0de;
 	font-size:20px;
 	border: 2px solid #78d0de;
+	cursor: pointer;
 }
 
 .textInfoDiv a button:hover{
@@ -90,7 +91,7 @@
 	float:left;
 }
 
-.addrAndMapDiv h2 {
+.addrAndMapDiv h2, #ourTeamh2 {
 	margin:0;
 	padding:0;
 	font-weight: bold;
@@ -103,4 +104,17 @@
 	height:475px;
 	border: 2px solid #d9d9db;
 	box-sizing: border-box;
+}
+
+.ourTeamDiv {
+	width:800px;
+	height:600px;
+	margin: 10px auto;
+	background-color: #d9d9db;
+	border: 2px solid #3e394d;
+}
+
+.ourTeamDiv img {
+	width:100%;
+	height:100%;
 }

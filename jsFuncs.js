@@ -16,7 +16,6 @@ function openCity(evt, cityName) {
 }
 
 function init() {
-    // Создание карты.
     var myMap = new ymaps.Map("map", {
         center: [56.136572, 40.396780],
         zoom: 17
@@ -33,23 +32,36 @@ function init() {
 }
 
 function myFunction(pagePart) {
-    if (pagePart == 'header') {
-        if (document.getElementById("myDropdown").classList.contains('show')) {
-            document.getElementById("myDropdown").className.replace(" show", "");
-        } else {
-            document.getElementById("myDropdown").className += " show";
-        }
-    } else {
-        if (document.getElementById("myDropdownFooter").classList.contains('show')) {
-            document.getElementById("myDropdownFooter").className.replace(" show", "");
-        } else {
-            document.getElementById("myDropdownFooter").className += " show";
-        }
+    switch (pagePart) {
+        case 'header':
+            if (document.getElementById("myDropdown").classList.contains('show')) {
+                document.getElementById("myDropdown").className.replace(" show", "");
+            } else {
+                document.getElementById("myDropdown").className += " show";
+            }
+            break;
+
+        case 'extra':
+            if (document.getElementById("extraDropDown").classList.contains('show')) {
+                document.getElementById("extraDropDown").className.replace(" show", "");
+            } else {
+                document.getElementById("extraDropDown").className += " show";
+            }
+            break;
+
+
+        case 'extraFooter':
+            if (document.getElementById("extraDropDownFooter").classList.contains('show')) {
+                document.getElementById("extraDropDownFooter").className.replace(" show", "");
+            } else {
+                document.getElementById("extraDropDownFooter").className += " show";
+            }
+            break;
     }
 }
 
 window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg')) {
+    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg') && !event.target.matches('.drpDwnDiv') && !event.target.matches('.dropdownExtraFooter')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
@@ -68,16 +80,6 @@ function ContractBlock(checkboxId) {
         document.getElementById("submitButton").disabled = true;
     }
 }
-
-$(document).ready(function () {
-    $('.multiple-items-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        dots: true,
-        variableWidth: true,
-        speed: 300,
-    });
-});
 
 function SelectPartnersOrLicenses(buttonId) {
     thisBtn = document.getElementById(buttonId);
@@ -100,8 +102,7 @@ function SelectPartnersOrLicenses(buttonId) {
     }
 }
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-function ModalImgShow(imgID,modalImgId) {
+function ModalImgShow(imgID, modalImgId) {
     var modalImgs;
 
     modalImgs = document.getElementsByClassName("modal-content");
@@ -116,11 +117,46 @@ function ModalImgShow(imgID,modalImgId) {
     modal.style.display = "block";
 }
 
-// Get the <span> element that closes the modal
-
-// When the user clicks on <span> (x), close the modal
-function CloseSpan() { 
+function CloseSpan() {
     var span = document.getElementById("close")[0];
     var modal = document.getElementById('Modal');
     modal.style.display = "none";
 }
+/* 
+function TextAreaStartText(elementID) {
+    var txtarea = document.getElementById(elementID);
+    switch (elementID) {
+        case 'msg':
+            if (txtarea.value == 'Сообщение') {
+                txtarea.value = '';
+            } else {
+                if (txtarea.value == '') {
+                    txtarea.value == 'Сообщение';
+                }
+            }
+            break;
+
+        case 'DebtorExtraInf':
+            if (txtarea.value == 'Иная имеющаяся информация') {
+                txtarea.value = '';
+            } else {
+                if (txtarea.value == '') {
+                    txtarea.value == 'Иная имеющаяся информация';
+                }
+            }
+            break;
+    }
+} */
+
+$(document).ready(function () {
+    document.getElementsByClassName("multiple-items-slider");
+    if (document != null) {
+        $('.multiple-items-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            variableWidth: true,
+            speed: 300,
+        });
+    }
+});

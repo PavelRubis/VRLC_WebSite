@@ -118,9 +118,10 @@ input[type="checkbox"] {
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.submitDiv button[type="submit"] img {
+img#cartImg {
     width: 25px;
     height:25px;
     float: left;
@@ -140,6 +141,7 @@ input[type="checkbox"] {
 .submitDiv button[disabled]:hover{
 	background-color:#3e394d;
 	color:#78d0de;
+    cursor: not-allowed;
 }
 
 

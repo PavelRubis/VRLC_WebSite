@@ -39,6 +39,10 @@
 	resize: none;
 }
 
+#send {
+	cursor: pointer;
+}
+
 #send:hover{
 	background-color: #78d0de;
 	color: #3e394d;

@@ -38,10 +38,11 @@
             <div id="myDropdown" class="dropdown-content">
                 <a href="home.html">Главная</a>
                 <a href="#">Услуги</a>
-                <a href="team.html">Команда</a>
-                <a href="#">Нам доверяют</a>
+                <a href="usTrust.html">Нам доверяют</a>
                 <a href="contacts.html">Контакты</a>
-                <a href="#">Розыск имущества</a>
+                <a href="propertySearch.html">Розыск имущества</a>
+                <a href="#">Видео</a>
+                <a href="#">Покупка долгов</a>
             </div>
         </div>
 
@@ -53,12 +54,19 @@
                             <nav>
                                 <ul>
                                     <li><a href="#">Услуги </a></li>
-                                    <li><a href="team.html">Команда</a></li>
-                                    <li><a href="#">Нам доверяют</a></li>
+                                    <li><a href="usTrust.html">Нам доверяют</a></li>
                                     <li><a href="contacts.html">Контакты</a></li>
-                                    <li><a href="#">Розыск имущества</a></li>
+                                    <li><a href="propertySearch.html">Розыск имущества</a></li>
+                                    <li>
+                                        <div class="dropdown" id='dropdownExtra'>
+                                            <div onclick="myFunction('extra')" class="drpDwnDiv">ПРОЧЕЕ</div>
+                                            <div id="extraDropDown" class="dropdown-content">
+                                                <a href="#">ВИДЕО</a>
+                                                <a href="#">ПОКУПКА ДОЛГОВ</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
-
                             </nav>
                             <div class="contactsDiv">
                                 <div class="contactsDivScnd">
@@ -141,21 +149,30 @@
                             onchange="ContractBlock('ContractCheckbox')"> С <a href="#"> договором</a> оказания услуги
                         ознакомлен
                     </label>
-                    <button type="submit" id="submitButton"> <img src="images/cart.png" /> <div>Купить услугу - 500₽</div> </button>
+                    <button type="submit" id="submitButton" onmouseover="var img = document.getElementById('cartImg'); img.src = 'images/darkCart.png';" onmouseout="var img = document.getElementById('cartImg'); img.src = 'images/blueCart.png';">  <img id="cartImg" src="images/blueCart.png"/> <div>Купить услугу - 500₽</div> </button>
                 </div>
             </form>
         </div>
     </div>
+
     <div id="footer">
         <p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
         <div class="footerMenuAddrDiv">
             <div class="footerMenuDiv">
                 <ul class="navFooter">
                     <li><a href="#">Услуги</a></li>
-                    <li><a href="team.html">Команда</a></li>
-                    <li><a href="#">Нам доверяют</a></li>
+                    <li><a href="usTrust.html">Нам доверяют</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="#">Розыск имущества</a></li>
+                    <li><a href="propertySearch.html">Розыск имущества</a></li>
+                    <li>
+                        <div class="dropdown" id='dropdownExtraFooter'>
+                            <div onclick="myFunction('extraFooter')" class="drpDwnDiv">Прочее</div>
+                            <div id="extraDropDownFooter" class="dropdown-content">
+                                <a href="#">ВИДЕО</a>
+                                <a href="#">ПОКУПКА ДОЛГОВ</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="footerAddrDiv">
