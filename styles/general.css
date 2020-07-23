@@ -98,8 +98,7 @@ body {
     padding-bottom: 0;
 }
 
-
-/* Кнопка выпадающего списка */
+.dropElement{}
 
 .dropbtn {
     width: 150px;
@@ -116,12 +115,11 @@ body {
     text-transform: uppercase;
 }
 
-.dropbtnImg {
+img.dropElement {
     width: 25px;
     height: 25px;
     margin-top: 3px;
 }
-
 
 /* Контейнер <div> - необходим для размещения выпадающего содержимого */
 
@@ -375,6 +373,11 @@ nav ul a, .drpDwnDiv {
 }
 
 .drpDwnDiv {
+    width: 77px;
+    height: 24px;
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
     text-transform: none;
 }
 

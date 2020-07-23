@@ -31,37 +31,16 @@ function init() {
 
 }
 
-function myFunction(pagePart) {
-    switch (pagePart) {
-        case 'header':
-            if (document.getElementById("myDropdown").classList.contains('show')) {
-                document.getElementById("myDropdown").className.replace(" show", "");
-            } else {
-                document.getElementById("myDropdown").className += " show";
-            }
-            break;
-
-        case 'extra':
-            if (document.getElementById("extraDropDown").classList.contains('show')) {
-                document.getElementById("extraDropDown").className.replace(" show", "");
-            } else {
-                document.getElementById("extraDropDown").className += " show";
-            }
-            break;
-
-
-        case 'extraFooter':
-            if (document.getElementById("extraDropDownFooter").classList.contains('show')) {
-                document.getElementById("extraDropDownFooter").className.replace(" show", "");
-            } else {
-                document.getElementById("extraDropDownFooter").className += " show";
-            }
-            break;
+function dropList(dropDownID) {
+    if (document.getElementById(dropDownID).classList.contains('show')) {
+        document.getElementById(dropDownID).classList.remove('show');
+    } else {
+        document.getElementById(dropDownID).classList.add('show');
     }
 }
 
 window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn') && !event.target.matches('.dropbtnImg') && !event.target.matches('.drpDwnDiv') && !event.target.matches('.dropdownExtraFooter')) {
+    if (!event.target.matches('.dropElement')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {

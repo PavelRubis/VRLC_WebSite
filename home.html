@@ -33,8 +33,9 @@
         </div>
 
         <div class="dropdown">
-            <button onclick="myFunction('header')" class="dropbtn"><img onclick="myFunction('header')"
-                    class="dropbtnImg" src='images/menu.png' /> Меню</button>
+            <button onclick="dropList('myDropdown')" class="dropbtn dropElement">
+                <img onclick="if (document.getElementById(dropDownID).className.match('show')) {document.getElementById(dropDownID).className.replace('show','');} else {document.getElementById(dropDownID).className += ' show';}" class="dropElement" src='images/menu.png' />
+                Меню</button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="home.html">Главная</a>
                 <a href="#">Услуги</a>
@@ -59,7 +60,8 @@
                                     <li><a href="propertySearch.html">Розыск имущества</a></li>
                                     <li>
                                         <div class="dropdown" id='dropdownExtra'>
-                                            <div onclick="myFunction('extra')" class="drpDwnDiv">ПРОЧЕЕ</div>
+                                            <div class="dropbtn drpDwnDiv dropElement" onclick="dropList('extraDropDown')">
+                                                ПРОЧЕЕ</div>
                                             <div id="extraDropDown" class="dropdown-content">
                                                 <a href="#">ВИДЕО</a>
                                                 <a href="#">ПОКУПКА ДОЛГОВ</a>
@@ -176,7 +178,7 @@
     </div>
 
     <div id="РОЗЫСК_ИМУЩЕСТВА" class="tabcontent propertySearchTab">
-        
+
         <div class="searchDivText">
             Услуга поиска имущества должников оказывается на всей территории РФ. <br> Вам нужно только оставить
             контактную
@@ -261,7 +263,7 @@
                     <li><a href="propertySearch.html">Розыск имущества</a></li>
                     <li>
                         <div class="dropdown" id='dropdownExtraFooter'>
-                            <div onclick="myFunction('extraFooter')" class="drpDwnDiv">Прочее</div>
+                            <div class="dropbtn drpDwnDiv dropElement" onclick="dropList('extraDropDownFooter')">Прочее</div>
                             <div id="extraDropDownFooter" class="dropdown-content">
                                 <a href="#">ВИДЕО</a>
                                 <a href="#">ПОКУПКА ДОЛГОВ</a>

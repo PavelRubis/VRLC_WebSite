@@ -1,0 +1,61 @@
+.videoTable {
+	margin:50px auto;
+	border: none;
+	empty-cells: hide;
+}
+
+.videoDiv {
+	width:335px;
+	margin-right:50px;
+	margin-bottom:50px;
+}
+
+.videoDiv h2 {
+    margin:0;
+    margin-bottom:10px;
+	font-weight: bold;
+	color: #3e394d;
+	font-size:20px;
+}
+
+.videoImgDiv {
+	height:150px;
+	width:100%;
+	margin-right:10px;
+    margin-bottom: 10px;
+	color: #3e394d;
+	background-color: #d9d9db;
+	text-align:center;
+	border: 1px solid #3e394d;
+}
+
+p.date {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.videoActionDiv{
+    width:100%;
+    height:40px;
+}
+
+.videoActionDiv .ya-share2{
+    float: left;
+}
+
+.videoActionDiv a{
+    height:30px;
+    float: right;
+}
+
+.videoActionDiv a button{
+	padding:3px;
+	margin:0;
+	background-color: #3e394d;
+	color: #d9d9db;
+	font-size:18px;
+	border: none;
+    cursor: pointer;
+}
