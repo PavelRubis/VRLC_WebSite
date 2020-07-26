@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title> ООО "ВРЮЦ"-Главная </title>
+    <link rel="stylesheet" type="text/css" href="styles/general.css" />
+    <link rel="stylesheet" type="text/css" href="styles/video.css" />
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script src="jsFuncs.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="logoDiv">
+            <a href="home.html"> <img src='images/logo3_png.png' alt="ООО ВРЮЦ Владимир" /> </a>
+        </div>
+
+        <div class="mobileHeaderRequestDiv" id="headerMobile">
+            <div class="contactsIconDiv"><a href="request.html"><img src="images/request.png" /></a></div>
+            <div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
+        </div>
+
+        <div class="mobileHeaderPhoneDiv" id="headerMobile">
+            <div class="contactsIconDiv"> <img src="images/phone.png" /></div>
+            <div class="contactsInfDiv">+7-4922-53-00-95</div>
+        </div>
+
+        <div class="mobileHeaderEmailDiv" id="headerMobile">
+            <div class="contactsIconDiv"> <img src="images/email1.png" /></div>
+            <div class="contactsInfDiv">rubisdv@mail.ru</div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="dropList('myDropdown')" class="dropbtn dropElement">
+                <img onclick="if (document.getElementById(dropDownID).className.match('show')) {document.getElementById(dropDownID).className.replace('show','');} else {document.getElementById(dropDownID).className += ' show';}"
+                    class="dropElement" src='images/menu.png' />
+                Меню</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="home.html">Главная</a>
+                <a href="#">Услуги</a>
+                <a href="usTrust.html">Нам доверяют</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="videos.html">Видео</a>
+                <a href="propertySearch.html">Розыск имущества</a>
+                <a href="#">Покупка долгов</a>
+            </div>
+        </div>
+
+        <div class="frstHeaderMenuDiv">
+            <div class="scndHeaderMenuDiv">
+                <div class="thrdHeaderMenuDiv">
+                    <div class="frthHeaderMenuDiv">
+                        <div class="headerMenuDiv">
+                            <div class="navDiv">
+                                <ul>
+                                    <li><a href="#">Услуги </a></li>
+                                    <li><a href="usTrust.html">Нам доверяют</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="videos.html">Видео</a></li>
+                                    <li><a href="propertySearch.html">Розыск имущества</a></li>
+                                    <li><a href="#">Покупка долгов</a></li>
+                                </ul>
+                            </div>
+                            <div class="contactsDiv">
+                                <div class="contactsDivScnd">
+                                    <div class="contactsIconDiv"> <img src="images/phone.png" /></div>
+                                    <div class="contactsInfDiv">+7-4922-53-00-95</div>
+                                </div>
+
+                                <div class="contactsDivScnd">
+                                    <div class="contactsIconDiv"><a href="request.html"><img
+                                                src="images/request.png" /></a></div>
+                                    <div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="linkDiv">
+        <a href="home.html">Главная ></a>
+        <a href="videos.html"> Видео ></a>
+        <a href=" Rick Astley - Never Gonna Give You Up (Video)"> Видео</a>
+    </div>
+
+    <div class="thsVideoDiv">
+        <div class="videoHeaderDiv">
+            <h2>Название видео</h2>
+            <p>01.04.2020 20:28</p>
+        </div>
+        <div class="playerDiv">
+            <iframe width="960" height="540" ; src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,viber,whatsapp,telegram" data-url="https://www.youtube.com/embed/dQw4w9WgXcQ"></div>
+    </div>
+
+    <div id="footer">
+        <p class="copyrightP">© ООО "ВРЮЦ", 2020</p>
+        <div class="footerMenuAddrDiv">
+            <ul class="navDivFooter">
+                <li><a href="#">Услуги </a></li>
+                <li><a href="usTrust.html">Нам доверяют</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="videos.html">Видео</a></li>
+                <li><a href="propertySearch.html">Розыск имущества</a></li>
+                <li><a href="#">Покупка долгов</a></li>
+            </ul>
+            <div class="footerAddrDiv">
+                <div class="contactsIconDiv"> <img src="images/location.png" /></div>
+                <div class="footerAddrDivText">г. Владимир, ул. Мира, дом 22</div>
+            </div>
+        </div>
+        <div class="contactsDiv footerContactsDiv">
+
+            <div class="contactsDivScnd">
+                <div class="contactsIconDiv"> <img src="images/email1.png" /></div>
+                <div class="contactsInfDiv">rubisdv@mail.ru</div>
+            </div>
+
+            <div class="contactsDivScnd">
+                <div class="contactsIconDiv"> <img src="images/phone.png" /></div>
+                <div class="contactsInfDiv">+7-4922-53-00-95</div>
+            </div>
+
+            <div class="contactsDivScnd">
+                <div class="contactsIconDiv"><a href="request.html"><img src="images/request.png" /></a></div>
+                <div class="contactsInfDiv"><a href="request.html">Запись на консультацию</a></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

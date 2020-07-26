@@ -1,0 +1,37 @@
+
+.thsVideoDiv {
+    margin:20px auto;
+    width:960px;
+    height: 605px;
+}
+
+.videoHeaderDiv {
+    height: 30px;
+    margin-bottom:10px;
+    color: #3e394d;
+}
+
+.videoHeaderDiv h2 {
+    margin:0;
+    margin-right: 635px;
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.videoHeaderDiv p {
+    margin-top: 3px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.thsVideoDiv .ya-share2 {
+    float: right;
+}
+
+.playerDiv {
+    width:100%;
+    height:540px;
+    margin-bottom: 10px;
+	border: 2px solid #3e394d;
+}
