@@ -1,13 +1,12 @@
 .videoTable {
-	margin:50px auto;
+	margin:0 auto;
 	border: none;
 	empty-cells: hide;
+	border-spacing:50px;
 }
 
 .videoDiv {
-	width:335px;
-	margin-right:50px;
-	margin-bottom:50px;
+	width:355px;
 }
 
 .videoDiv h2 {
@@ -19,7 +18,7 @@
 }
 
 .videoImgDiv {
-	height:150px;
+	height:200px;
 	width:100%;
 	margin-right:10px;
     margin-bottom: 10px;

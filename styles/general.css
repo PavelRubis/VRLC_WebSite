@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #header {
@@ -92,10 +92,11 @@ body {
 
 .headerMenuDiv {
     height: 50px;
-    padding-left: 380px;
-    padding-right: 0;
+    padding-left: 32px;
+    padding-right: 220px;
     padding-top: 0;
     padding-bottom: 0;
+    border-top: 1px solid transparent;
 }
 
 .dropElement{}
@@ -208,162 +209,46 @@ img.dropElement {
 }
 
 #footer {
-    padding: 10px;
     height: 100px;
     box-sizing: border-box;
+    padding: 10px;
+    padding-left: 165px;
+    padding-right: 250px;
+    font-size: 14px;
     border-top: 2px solid #d9d9db;
     background-color: #3e394d;
     color: #d9d9db;
 }
 
-nav ul {
+.navDiv{margin: 0 auto;}
+
+.navDiv ul {
     margin-top: 3px;
     margin-bottom: 3px;
     padding-left: 0;
     list-style: none;
-    float: left;
-}
-
-@media (max-width: 1440px) {
-    nav ul {
-        margin-right: 80px;
-    }
-    nav ul li {
-        margin-right: 10px;
-    }
-    p.copyrightP {
-        margin-right: 140px;
-    }
-    div.footerMenuAddrDiv {
-        margin-right: 20px;
-    }
-    .headerMenuDiv {
-        padding-left: 90px;
-    }
-}
-
-@media (max-width: 1300px) {
-    nav ul {
-        margin-right: 50px;
-        margin-top: 5px;
-    }
-    nav ul li {
-        margin-right: 0;
-        font-size: 18px;
-    }
-    p.copyrightP {
-        margin-right: 70px;
-    }
-    div.footerMenuAddrDiv {
-        margin-right: 10px;
-    }
-    div.footerMenuDiv {
-        padding: 0px;
-    }
-    div.footerAddrDiv {
-        margin-left: 120px;
-        width: 325px;
-        margin: 0 auto;
-    }
-    .headerMenuDiv {
-        padding-left: 90px;
-    }
 }
 
 .contactsDiv {
-    width: 300px;
-    color: #78d0de;
+    position: absolute;
+    right: 0;
+    margin-top: -46px;
+    margin-right: 30px;
     text-align: left;
-    float: left;
+    color: #78d0de;
 }
 
-@media (min-width: 1441px) {
-    nav ul {
-        margin-right: 100px;
-    }
-    nav ul li {
-        margin-right: 30px;
-    }
-    .headerMenuDiv {
-        padding-left: 140px;
-    }
-    .tablinks {
-        height: 45px;
-    }
+.contactsDiv.footerContactsDiv {
+    margin-top: -80px;
 }
 
-@media (max-width: 1100px) {
-    .frstHeaderMenuDiv,
-    .scndHeaderMenuDiv,
-    .thrdHeaderMenuDiv,
-    .frthHeaderMenuDiv,
-    nav ul,
-    ul.navFooter,
-    .footerMenuDiv {
-        display: none;
-    }
-    #header {
-        height: 450px;
-        background-color: #3e394d;
-    }
-    #headerMobile {
-        display: block;
-        margin: 10px auto;
-    }
-    .logoDiv {
-        margin: 10px auto;
-        margin-bottom: 25px;
-        float: none;
-        height: 200px;
-        width: 200px;
-    }
-    .dropdown {
-        margin-top: 35px;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        display: block;
-    }
-    p.copyrightP {
-        margin-right: 70px;
-        margin-top: 25px;
-    }
-    div.footerMenuAddrDiv {
-        height: 50px;
-        margin-top: 15px;
-        margin-right: 60px;
-    }
-    div.footerMenuDiv {
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
-}
-
-@media (min-width: 1920px) {
-    nav ul {
-        margin-right: 65px;
-    }
-    nav ul li {
-        margin-right: 100px;
-    }
-    p.copyrightP {
-        margin-right: 420px;
-    }
-    div.footerMenuAddrDiv {
-        margin-right: 290px;
-    }
-    .headerMenuDiv {
-        padding-left: 200px;
-    }
-}
-
-nav ul li {
+.navDiv ul li {
+    margin-right: 10px;
     display: inline;
 }
 
-nav ul a, .drpDwnDiv {
+.navDiv ul a, .drpDwnDiv {
     display: inline-block;
-    padding: 10px;
     border: none;
     text-decoration: none;
     text-transform: uppercase;
@@ -468,7 +353,6 @@ nav ul a, .drpDwnDiv {
     border-bottom: none;
 }
 
-
 .serviceDiv {
     width: 200px;
     height: 200px;
@@ -508,29 +392,26 @@ nav ul a, .drpDwnDiv {
 }
 
 .copyrightP {
+    width:155px;
     height: 30px;
-    float: left;
-    margin-right: 230px;
+    position: absolute;
+    left:0;
+    margin:0;
+    margin-left: 10px;
     margin-top: 30px;
-    margin-bottom: 0;
     text-align: center;
 }
 
 .footerMenuAddrDiv {
-    float: left;
     height: 80px;
-    margin-right: 100px;
+    margin: 0 auto;
     color: #78d0de;
-}
-
-.footerMenuDiv {
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .footerAddrDiv {
     height: 40px;
-    margin-left: 170px;
+    width:250px;
+    margin:0 auto;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -553,21 +434,19 @@ nav ul a, .drpDwnDiv {
     border: 2px solid #78d0de;
     box-sizing: border-box;
     text-align: center;
-    font-size: 20px;
 }
 
-ul.navFooter {
-    float: left;
+ul.navDivFooter {
     margin: 0;
     padding-left: 0;
     list-style: none;
 }
 
-.navFooter li {
+.navDivFooter li {
     display: inline;
 }
 
-ul.navFooter a {
+ul.navDivFooter a {
     display: inline-block;
     padding: 5px;
     border: none;
@@ -609,4 +488,330 @@ ul.navFooter a {
 .linkDiv a:active {
     color: #3e394d;
     text-decoration: underline;
+}
+
+@media (min-width: 960px) {
+    .frstHeaderMenuDiv,
+    .scndHeaderMenuDiv,
+    .thrdHeaderMenuDiv,
+    .frthHeaderMenuDiv,
+    .navDiv ul,
+    ul.navDivFooter {
+        display: none;
+    }
+
+    body {
+        font-size: 22px;
+    }
+
+    #header {
+        height: 450px;
+        background-color: #3e394d;
+    }
+
+    #headerMobile {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .logoDiv {
+        margin: 10px auto;
+        margin-bottom: 25px;
+        float: none;
+        height: 200px;
+        width: 200px;
+    }
+
+    .dropdown {
+        margin-top: 35px;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        font-size: 22px;
+    }
+
+    #footer {
+        font-size: 22px;
+        padding-left: 225px;
+        padding-right: 320px;
+    }
+
+    .copyrightP {
+        width: 220px;
+    }
+
+    .footerMenuAddrDiv {
+        width:350px;
+        margin-top:15px;
+    }
+
+    .footerAddrDiv {
+        width:350px;
+    }
+
+    .contactsDiv.footerContactsDiv {
+        margin-top: -95px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #headerMobile,.dropdown {
+        display: none;
+    }
+    .frstHeaderMenuDiv,
+    .scndHeaderMenuDiv,
+    .thrdHeaderMenuDiv,
+    .frthHeaderMenuDiv,
+    .navDiv ul,
+    ul.navDivFooter,
+    .footerMenuDiv {
+        display: block;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+
+    #header {
+        height: 100px;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: #d9d9db;
+        border-bottom: 2px solid #3e394d;
+        font-size: 14px;
+    }
+
+    .headerMenuDiv {
+        padding-right: 200px;
+    }
+
+    .logoDiv {
+        width: 96px;
+        height: 95px;
+        margin:0;
+        z-index: 10;
+        float: left;
+    }
+
+    .navDiv {
+        width:650px;
+        margin-top: 15px;
+    }
+
+    .contactsDiv { 
+        margin-top: -35px;
+    }
+
+    #footer {
+        font-size: 14px;
+        padding-right: 225px;
+        padding-left: 165px;
+    }
+
+    .copyrightP {
+        width: 155px;
+    }
+
+    .footerMenuAddrDiv {
+        width:590px;
+        margin-top:0;
+    }
+    
+    .contactsDiv.footerContactsDiv {
+        margin-top: -80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        font-size: 20px;
+    }
+
+    #header{ 
+        font-size: 16px;
+    }
+    
+    .headerMenuDiv {
+        padding-right: 225px;
+    }
+
+    .navDiv{
+        width:760px;
+        margin-top: 15px;
+    }
+
+    .navDiv ul li {
+        margin-right: 15px;
+    }
+
+    .contactsDiv { 
+        margin-top: -37px;
+    }
+
+    .tablinks {
+        height: 45px;
+    }
+
+    #footer {
+        font-size: 16px;
+        padding-left: 195px;
+        padding-right: 250px;
+    }
+
+    .copyrightP {
+        width: 185px;
+    }
+    
+    .footerMenuAddrDiv {
+        width:650px;
+    }
+    
+    .footerAddrDiv {
+        width:280px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .tablinks {
+        height: 45px;
+    }
+    
+    #header{ 
+        font-size: 18px;
+    }
+    
+    .headerMenuDiv {
+        padding-right: 250px;
+    }
+
+    .navDiv{
+        width:830px;
+    }
+
+    .navDiv ul li {
+        margin-right: 15px;
+    }
+
+    .contactsDiv { 
+        margin-top: -40px;
+    }
+
+    .tablinks {
+        height: 45px;
+    }
+
+    #footer {
+        font-size: 18px;
+        padding-left: 195px;
+        padding-right: 270px;
+    }
+
+    .copyrightP {
+        width: 185px;
+    }
+    
+    .footerMenuAddrDiv {
+        width:720px;
+    }
+    
+    .footerAddrDiv {
+        width:300px;
+    }
+}
+
+
+@media (min-width: 1536px) {
+    
+    #header{ 
+        font-size: 19px;
+    }
+    
+    .headerMenuDiv {
+        padding-right: 260px;
+    }
+
+    .navDiv{
+        width:900px;
+        margin-top: 14px;
+    }
+
+    .navDiv ul li {
+        margin-right: 20px;
+    }
+
+    .contactsDiv { 
+        margin-top: -41px;
+    }
+
+    .tablinks {
+        height: 45px;
+    }
+
+    #footer {
+        font-size: 19px;
+        padding-left: 195px;
+        padding-right: 280px;
+    }
+
+    .copyrightP {
+        width: 185px;
+    }
+    
+    .footerMenuAddrDiv {
+        width:780px;
+    }
+    
+    .footerAddrDiv {
+        width:320px;
+    }
+}
+
+@media (min-width: 1920px) {
+    
+    #header{ 
+        font-size: 22px;
+    }
+    
+    .headerMenuDiv {
+        padding-right: 300px;
+    }
+
+    .navDiv{
+        width:1100px;
+        margin-top: 10px;
+    }
+
+    .navDiv ul li {
+        margin-right: 30px;
+    }
+
+    .contactsDiv { 
+        margin-top: -40px;
+    }
+
+    .tablinks {
+        height: 45px;
+    }
+
+    #footer {
+        font-size: 22px;
+        padding-left: 225px;
+        padding-right: 320px;
+    }
+
+    .copyrightP {
+        width: 220px;
+    }
+    
+    .footerMenuAddrDiv {
+        width:900px;
+    }
+    
+    .footerAddrDiv {
+        width:400px;
+    }
 }
