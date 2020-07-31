@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(font/Roboto-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(font/Roboto-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -689,7 +675,7 @@ ul.navDivFooter a {
     }
 
     .navDiv{
-        width:830px;
+        width:850px;
     }
 
     .navDiv ul li {
@@ -735,7 +721,7 @@ ul.navDivFooter a {
     }
 
     .navDiv{
-        width:900px;
+        width:920px;
         margin-top: 14px;
     }
 
